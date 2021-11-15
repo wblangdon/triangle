@@ -34,13 +34,19 @@ Original code distribution http://www.cs.ucl.ac.uk/staff/W.Langdon/ftp/gp-code/t
 <li><a href="information.out">information.out</a>
 <li><a href="information_return.gnu">information_return.gnu</a>
 <li><a href="isosceles.gnu">isosceles.gnu</a>
+<br>Example gnuplot script to show 3D plot of three planes in 3D input space of
+the Triangle Program correspoding to outputs
+2&nsbp;isosceles and 3&nbsp;Equilateral
+on the user's screen.
+User interaction via mouse etc.
+(Other values not plotted).
+Assumes 8120601 test cases for the Triangle Program.
 <li><a href="main2.c">main2.c</a>
 <br>C file for instrumented version the Triangle Program
 Generates 8120601 test outputs using triang.c
 <li><a href="main.c">main.c</a>
 <li><a href="README.md">README.md</a>
 <br>This file
-<li><a href="sphere.gnu">sphere.gnu</a>
 <li><a href="triang.c">triang.c</a>
 <br>Instrumented version the Triangle Program and support routines for main2.c
 <li><a href="triangle.c">triangle.c</a>
