@@ -1,4 +1,14 @@
-#WBL 27 Oct 2021 $Revision: 1.2 $
+#WBL 27 Oct 2021 $Revision: 1.3 $
+#gawk script to calculate entropy of inputs and outputs of the Triangle Program
+#when tested on all values between -100 and +100 on all three inputs
+
+#Modifications
+#WBL 15 Nov 2021 Add usage: comment etc
+
+#Usage:
+#gawk -f triangle_h.awk /dev/null
+
+#Output values and count
 #4 7605851
 #1 492450
 #2 22200
