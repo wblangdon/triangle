@@ -102,6 +102,11 @@ Generates 8120601 test outputs using triang.c
 <br>Original C source the Triangle Program
 
 <li><a href="triangle.gnu">triangle.gnu</a>
+<br>gnuplot script to show three dimensional
+distribution of values output by the Triangle Program.
+Value 2 for isosceles triangles are shown as three planes.
+To avoid swamping the display, value 1 for scalene triangles are 
+sampled only every 5 (one in 125 in three dimensions).
 
 <li><a href="triangle_h.awk">triangle_h.awk</a>
 <br>Example of calculating Entropy.
