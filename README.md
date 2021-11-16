@@ -62,8 +62,7 @@ Isosceles       2   22200 0.002734 0.0232779
 not_a_triangle  4 7605851 0.936612 0.0884881
 Scalene         1  492450 0.060642 0.245208
 
-entropy in 22.9532     entropy out 0.357175
-</pre>
+entropy in 22.9532     entropy out 0.357175</pre>
 <li><a href="triangle.scalene">triangle.scalene</a>
 <li><a href="triang.out">triang.out</a>
 </ul>
