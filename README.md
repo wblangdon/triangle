@@ -132,7 +132,8 @@ entropy in 22.9532     entropy out 0.357175</pre>
 
 <li>triang.out
 <br>Distribution of values of internal variable triang
-after each time it is (conditionally updated.
+after each time it is (conditionally) updated.
+(Not in github.)
 <dl>
 <dt>0</dt>line 11, after triang = 0;
 <dt>1</dt>line 15, after triang conditionally incremented
@@ -158,5 +159,4 @@ Assumes 8120601 test cases for the Triangle Program.
 3   6     100
 3 tot 1000000
 </pre>
-Not in github
 </ul>
