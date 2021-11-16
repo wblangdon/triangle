@@ -1,4 +1,4 @@
-the triangle program benchmark
+The triangle program benchmark
 
 Use with minimal 14 tests covering all the code in
 
@@ -36,7 +36,7 @@ Original code distribution http://www.cs.ucl.ac.uk/staff/W.Langdon/ftp/gp-code/t
 <li><a href="isosceles.gnu">isosceles.gnu</a>
 <br>Example gnuplot script to show 3D plot of three planes in 3D input space of
 the Triangle Program correspoding to outputs
-2&nsbp;isosceles and 3&nbsp;Equilateral
+2 isosceles and 3&nbsp;Equilateral
 on the user's screen.
 User interaction via mouse etc.
 (Other values not plotted).
