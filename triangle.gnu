@@ -1,12 +1,19 @@
-#WBL 27 Oct 2021 $Revision: 1.11 $
+#WBL 27 Oct 2021 $Revision: 1.12 $
 #Can we make splot/movie/ of triangle program input and output space
 #show location of entropy loss regions
 #relationship with seeded mutations
 
 #Modifications:
+#WBL  6 Nov 2021 generate gif for release of slides
+#follow https://stackoverflow.com/questions/29750778/rotate-an-animated-image-in-gnuplot-with-the-mouse
 #WBL 28 Oct 2021 tidy and send to David via teams
 
-set title "Triangle Program, 8120601 possible inputs, Entropy in=22.95 Entropy out=0.357"
+#50ms between frames (20fps) loop forever
+set terminal gif transparent animate delay 5 loop 0 optimize
+set output "triangle.gif"
+
+set title "Triangle Program, 8120601 possible inputs\nEntropy in=22.95 Entropy out=0.357" \
+ offset 0,1
 
 #using copy of ~/sebase/re_gp/triangle2/triangle.c
 #return 4 not a triangle
@@ -46,9 +53,10 @@ set trange [-100:100]
 set urange [-100:100]
 set vrange [-100:100]
 
+#try to minimise "jumping" in animation by removing vertical labels
 set xlabel "side1"
 set ylabel "side2"
-set zlabel "side3"
+set border 15; unset ztics #set zlabel "side3"
 
 equilateral(z) = (z>0)? z : 0/0;
 
@@ -57,13 +65,17 @@ isosceles(x,y) = (x>0 && y>0 && (x+y)<2*x)? x : 0/0;
 #select scalene and reduce data volume
 #!gawk '(($1%5)==0 &&($2%5)==0 &&($3%5)==0 && $4==1)' triangle.out > /tmp/triangle.scalene
 
-set key left \
+set key at screen 0.92,0.2 \
 title    "not plotted return 4, 7605851"
 
 
-set view 50,20
+#set view 50,20
 
 set ticslevel 0
+
+n = 100
+do for [i=1:n] {
+   set view 50, i*360/n
 
 #https://stackoverflow.com/questions/24909408/how-can-i-draw-a-plane-in-gnuplot-when-it-is-parallel-to-one-of-the-coordinate
 
@@ -73,6 +85,7 @@ u,isosceles(u,v),v title "side1 == side2 return 2,       7400" w l lc 2,\
 isosceles(v,u),u,v title "side1 == side3 return 2,       7400" w l lc 3,\
 u,v,isosceles(v,u) title "side2 == side3 return 2,       7400" w l lc 4,\
 u,u,equilateral(u) title    "equilateral return 3,        100" w linespoint lc 1
+}
 
-pause -1
+#pause -1
 quit
