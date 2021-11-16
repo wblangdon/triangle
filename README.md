@@ -1,6 +1,10 @@
 The triangle program benchmark
 
-Use with minimal 14 tests covering all the code in
+Used with minimal 14 tests covering all the code in
+"Efficient Multi Objective Higher Order Mutation Testing with Genetic
+Programming", Journal of Systems and Software, 83 (2010) pp2416-2430
+doi:10.1016/j.jss.2010.07.027
+(see jss/testcases_oracle.txt).
 
 Fitness Landscape of the Triangle Program,
 William B. Langdon and Mark Harman 
