@@ -37,17 +37,21 @@ after triang is (conditionally) updated.
 <pre>
 ./a.out | gawk -f information.awk > information.dat
 </pre>(takes 4.4GB and a several minutes)
+
 <li>information.dat
 <br>
 Output of information.awk (not in github)
+
 <li><a href="information_filter.awk">information_filter.awk</a>
 <br>preprocess output of main2.c for information.gnu
 <pre>
 ./a.out | gawk -f information_filter.awk > information_filter.out
 </pre>
+
 <li>information_filter.out
 <br>
 Output of information_filter.awk (not in github) for use by information.gnu
+
 <li><a href="information.gnu">information.gnu</a>
 <br>gnuplot script to show distribution of values held by
 the internal triang variable at various lines inside the program
@@ -58,8 +62,21 @@ the distribution the same for each of the three inputs
 but also there is
 no variation with input value.
 
-<li><a href="information.out">information.out</a>
+<li>information.out
+<br>
+More recent version of output of information_filter.awk 
+(again not in github) for use by information_return.gnu
+
 <li><a href="information_return.gnu">information_return.gnu</a>
+<br>like information.gnu
+a gnuplot script to show distribution of values output by
+the Triangle Program.
+Again the distribution for each of the three inputs are
+identical.
+Note almost all return values are 4 (not a triangle)
+and the other three values only occur if the input is positive.
+
+
 <li><a href="isosceles.gnu">isosceles.gnu</a>
 <br>Example gnuplot script to show 3D plot of three planes in 3D input space of
 the Triangle Program corresponding to outputs
@@ -68,17 +85,24 @@ on the user's screen.
 User interaction via mouse etc.
 (Other values not plotted).
 Assumes 8120601 test cases for the Triangle Program.
+
 <li><a href="main2.c">main2.c</a>
 <br>C file for instrumented version the Triangle Program
 Generates 8120601 test outputs using triang.c
+
 <li><a href="main.c">main.c</a>
+
 <li><a href="README.md">README.md</a>
 <br>This file
+
 <li><a href="triang.c">triang.c</a>
 <br>Instrumented version the Triangle Program and support routines for main2.c
+
 <li><a href="triangle.c">triangle.c</a>
 <br>Original C source the Triangle Program
+
 <li><a href="triangle.gnu">triangle.gnu</a>
+
 <li><a href="triangle_h.awk">triangle_h.awk</a>
 <br>Example of calculating Entropy.
 Assumes 8120601 test cases for the Triangle Program
@@ -90,6 +114,8 @@ not_a_triangle  4 7605851 0.936612 0.0884881
 Scalene         1  492450 0.060642 0.245208
 
 entropy in 22.9532     entropy out 0.357175</pre>
+
 <li><a href="triangle.scalene">triangle.scalene</a>
+
 <li><a href="triang.out">triang.out</a>
 </ul>
