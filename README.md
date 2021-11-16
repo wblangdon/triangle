@@ -123,7 +123,37 @@ Scalene         1  492450 0.060642 0.245208
 
 entropy in 22.9532     entropy out 0.357175</pre>
 
-<li><a href="triangle.scalene">triangle.scalene</a>
+<li>triangle.scalene
+<br>data file generated from triangle.out by triangle.gnu
+(not in github)
 
-<li><a href="triang.out">triang.out</a>
+<li>triang.out
+<br>Distribution of values of internal variable triang
+after each time it is (conditionally updated.
+<dl>
+<dt>0</dt>line 11, after triang = 0;
+<dt>1</dt>line 15, after triang conditionally incremented
+<dt>3</dt>line 18, after triang conditionally increased by 2
+<dt>3</dt>line 21, after triang conditionally increased by 3
+</dl>
+Assumes 8120601 test cases for the Triangle Program.
+<pre>
+0   0 1000000
+0 tot 1000000
+1   0  990000
+1   1   10000
+1 tot 1000000
+2   0  980100
+2   1    9900
+2   2    9900
+2   3     100
+2 tot 1000000
+3   0  970200
+3   1    9900
+3   2    9900
+3   3    9900
+3   6     100
+3 tot 1000000
+</pre>
+Not in github
 </ul>
