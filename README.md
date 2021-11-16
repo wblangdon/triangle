@@ -90,7 +90,10 @@ Assumes 8120601 test cases for the Triangle Program.
 <br>C file for instrumented version the Triangle Program
 Generates 8120601 test outputs using triang.c
 
-<li><a href="main.c">main.c</a>
+<!-- li main.c not uploaded to reduce confusion with main2.c
+Tiny test hardness to run the Triangle Program in triangle.c
+for all input values between -100 and +100
+(total 8120601 test cases) !-->
 
 <li><a href="README.md">README.md</a>
 <br>This file
