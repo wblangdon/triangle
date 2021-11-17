@@ -7,7 +7,7 @@ doi:10.1016/j.jss.2010.07.027
 
 See 
 <UL>
-<li><a href="jss/triangle.c">triangle.c</a>
+<li><a href="jss/triangle.c">jss/triangle.c</a>
 <br>Original C source for the Triangle Program
 <li><a href="jss/testcases_oracle.txt">jss/testcases_oracle.txt</a>
 <br>14 tests (inputs and expected return value) for the Triangle Program
