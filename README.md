@@ -143,9 +143,9 @@ entropy in 22.9532     entropy out 0.357175</pre>
 after each time it is (conditionally) updated.
 (Not in github.)
 <dl>
-<dt>0</dt>line 11, after triang = 0;
+<dt>0</dt>line 11 (in <a href="jss/triangle.c">jss/triangle.c</a>), after triang = 0;
 <dt>1</dt>line 15, after triang conditionally incremented
-<dt>3</dt>line 18, after triang conditionally increased by 2
+<dt>2</dt>line 18, after triang conditionally increased by 2
 <dt>3</dt>line 21, after triang conditionally increased by 3
 </dl>
 Assumes 8120601 test cases for the Triangle Program.
