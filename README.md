@@ -4,7 +4,14 @@ Used with minimal 14 tests covering all the code in
 "Efficient Multi Objective Higher Order Mutation Testing with Genetic
 Programming", Journal of Systems and Software, 83 (2010) pp2416-2430
 doi:10.1016/j.jss.2010.07.027
-(see jss/testcases_oracle.txt).
+
+See 
+<UL>
+<li><a href="jss/triangle.c">triangle.c</a>
+<br>Original C source for the Triangle Program
+<li><a href="jss/testcases_oracle.txt">jss/testcases_oracle.txt</a>
+<br>14 tests (inputs and expected return value) for the Triangle Program
+</UL>
 
 Fitness Landscape of the Triangle Program,
 William B. Langdon and Mark Harman 
@@ -107,9 +114,6 @@ for all input values between -100 and +100
 
 <li><a href="triang.c">triang.c</a>
 <br>Instrumented version the Triangle Program and support routines for main2.c
-
-<li><a href="triangle.c">triangle.c</a>
-<br>Original C source the Triangle Program
 
 <li><a href="triangle.gnu">triangle.gnu</a>
 <br>gnuplot script to show three dimensional
